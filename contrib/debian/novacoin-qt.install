@@ -1,0 +1,5 @@
+yjenco-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/yjenco-qt.desktop usr/share/applications
+debian/yjenco-qt.protocol usr/share/kde4/services/

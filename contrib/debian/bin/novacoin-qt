@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+umask 077
+
+basedir=~/.yjenco
+dbfile="$basedir/DB_CONFIG"
+cfgfile="$basedir/yjenco.conf"
+
+[ -e "$basedir" ] || mkdir "$basedir"
+
+# Yjenco does not clean up DB log files by default
+[ -e "$dbfile" ] || echo 'set_flags DB_LOG_AUTOREMOVE' > "$dbfile"
+
+exec /usr/lib/yjenco/yjenco-qt "$@"

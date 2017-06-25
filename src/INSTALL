@@ -1,0 +1,9 @@
+Building Yjenco
+
+See doc/readme-qt.rst for instructions on building Yjenco QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Yjenco.
+
+See doc/build-*.txt for instructions on building Yjencod,
+the intended-for-services, no-graphical-interface, reference
+implementation of Yjenco.
